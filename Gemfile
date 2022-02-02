@@ -14,7 +14,7 @@ gem "pg", "~> 1.1"
 
 gem 'devise', github: 'heartcombo/devise', branch: 'main'
 
-gem 'bootstrap-sass', '~> 3.4.1'
+gem 'bootstrap', '~> 5.1.3'
 
 gem 'jquery-rails'
 
