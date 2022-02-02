@@ -1,13 +1,16 @@
 <header>
-	<%= link_to 'Mon Blog', root_path %>
-	<%= link_to 'Tous les posts', posts_path %>
-	<% if user_signed_in? %>
-		<%= link_to current_user.email, user_path(current_user) %>
-		<%= link_to 'Deconnexion', destroy_user_session_path, method: :delete %>
-	<% else %>
-		<%= link_to 'Connexion', new_user_session_path %>
-		<%= link_to 'Inscription', new_user_registration_path %>
-	<% end %>
-
+	<div class='navbar-background fixed-top'>
+	<nav class="d-flex"> 
+		<%= link_to 'Ma candidature', root_path, class:'menu_item' %>
+		<%= link_to 'Les soutiens', posts_path, class:'menu_item' %>
+		<% if user_signed_in? %>
+			<%= link_to current_user.email, user_path(current_user), class:'menu_item' %>
+			<%= link_to 'Deconnexion', destroy_user_session_path, method: :delete, class:'menu_item' %>
+		<% else %>
+			<%= link_to 'Connexion', new_user_session_path, class:'menu_item' %>
+			<%= link_to 'Inscription', new_user_registration_path, class:'menu_item' %>
+		<% end %>
+	</nav>
+	</div>
 
 </header>
