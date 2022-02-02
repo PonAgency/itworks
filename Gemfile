@@ -14,6 +14,10 @@ gem "pg", "~> 1.1"
 
 gem 'devise', github: 'heartcombo/devise', branch: 'main'
 
+gem 'bootstrap-sass', '~> 3.4.1'
+
+gem 'jquery-rails'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
