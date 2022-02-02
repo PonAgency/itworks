@@ -1,0 +1,13 @@
+<header>
+	<%= link_to 'Mon Blog', root_path %>
+	<%= link_to 'Tous les posts', posts_path %>
+	<% if user_signed_in? %>
+		<%= link_to current_user.email, user_path(current_user) %>
+		<%= link_to 'Deconnexion', destroy_user_session_path, method: :delete %>
+	<% else %>
+		<%= link_to 'Connexion', new_user_session_path %>
+		<%= link_to 'Inscription', new_user_registration_path %>
+	<% end %>
+
+
+</header>
