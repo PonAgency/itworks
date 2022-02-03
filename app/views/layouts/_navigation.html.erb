@@ -1,16 +1,20 @@
 <header>
-	<div class='navbar-background fixed-top'>
-	<nav class="d-flex"> 
-		<%= link_to 'LA CANDIDATURE', root_path, class:'menu_item' %>
-		<%= link_to 'LES SOUTIENS', posts_path, class:'menu_item' %>
-		<% if user_signed_in? %>
-			<%= link_to current_user.email, user_path(current_user), class:'menu_item' %>
-			<%= link_to 'DECONNEXION', destroy_user_session_path, method: :delete, class:'menu_item' %>
-		<% else %>
-			<%= link_to 'CONNEXION', new_user_session_path, class:'menu_item' %>
-			<%= link_to 'Inscription', new_user_registration_path, class:'menu_item' %>
-		<% end %>
-	</nav>
+	<div class='container-fluid navbar-background fixed-top'>
+		<div class="row">
+			<div class="col-6 connexion-menu">
+				<%= image_tag "https://res.cloudinary.com/dfefpyzcm/image/upload/v1643911463/mini-logo_eqzukr.png", alt:"intro", class:"logo-nav"%>
+				<%= link_to 'LA CANDIDATURE', root_path, class:'menu_item menu-bloc' %>
+				<%= link_to 'LES SOUTIENS', posts_path, class:'menu_item menu-bloc' %>
+			</div>
+			<div class="col-6 connexion-navigation">
+				<% if user_signed_in? %>
+				<%= link_to current_user.email, user_path(current_user), class:'menu_item menu-nav' %>
+				<%= link_to 'Déconnexion', destroy_user_session_path, method: :delete, class:'menu_item' %>
+				<% else %>
+				<%= link_to 'Connexion', new_user_session_path, class:'menu_item' %>
+				<%= link_to 'Inscription', new_user_registration_path, class:'menu_item' %>
+				<% end %>
+			</div>
+		</div>
 	</div>
-
 </header>

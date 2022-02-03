@@ -1,17 +1,37 @@
 <div class="footer-all">
-    <div class="container footer-text-color">
+    <div style="height:30px;"></div>    
+    <div class="container-fluid footer-text-color">
        <div class="row justify-content-md-center">
-        <div class="col-3 sm-12">
-           <p style="footer_title">test 2</p>
+        <div class="col-4 sm-12">
+           <%= image_tag "https://res.cloudinary.com/dfefpyzcm/image/upload/v1643906541/cora-technology_yev2of.png", alt:"intro", class:"img-fluid cora-tech-footer"%>
         </div>
       <div class="col-3 sm-12">
-        <p style="footer_title">test 2</p>
+        <h3 class="footer_title">Avec vous</h3>   
+        <p><%= link_to "Je témoigne", new_post_path, class:'footer_item' %></p>
+        <p><%= link_to 'Les soutiens', posts_path, class:'footer_item' %></p>
       </div>
-      <div class="col-6 sm-12">
-        <h3>Vous souhaitez soutenir Cora ?</h3>   
-        <p>Vous voulez recommander Cora ? Laisser un témoignage  ? Ou bien simplement l'encourager ?</p>
+      <div class="col-4 sm-12 col-temoignage">
+        <h3 class="footer_title">Je soutiens Cora</h3>   
+        <p>Ensemble nous pouvons changer le cours d'Epitech ! </br>Partagez vos témoignages sur notre plateforme ou écrivez-nous directement à l'adresse contact@coraforepitech.com</p>
         <p>Contactez-nous : contact@coraaepitech.com </p>
       </div>  
-    <div class="row">
+    <div class="row">   
+  </div>
+  <div style="height:70px;"></div> 
+</div>
+
+<div class="footer_2">  
+    <div class="container-fluid footer-text-color">
+       <div class="row justify-content-md-center">
+        <div class="col-6 sm-12">
+        <p>© 2022 Cora Technology™. All Rights Reserved 
+      </div>
+       <div class="col-6 sm-12 payment-footer">
+         <%= image_tag "https://res.cloudinary.com/dfefpyzcm/image/upload/v1643909367/payment-options_xsalnd.png", alt:"intro", class:"img-fluid"%>
+      </div>  
+    <div class="row">   
   </div>
 </div>
+
+
+

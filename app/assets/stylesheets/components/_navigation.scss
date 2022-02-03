@@ -1,13 +1,8 @@
 .navbar-background {
   position: fixed;
   top: 0;
-  width: 100%;
   background:white;
   height: 80px;
-  padding-left: 7%;
-  padding-right: 8%;
-  margin-left: auto;
-  margin-right: auto;
   color:#2A53C1;
   box-shadow: 0 2px 15px #d2d2d2;
   padding-top:27px;
@@ -32,16 +27,15 @@
   color:w#d2d2d2;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.connexion-navigation {
+  text-align:right !important;
+  padding-right:40px !important;
 }
 
-.routes {
-  text-align: center;
-  height: 50px;
-  // width: 100%;
-  margin-top: 0px;
+.connexion-menu {
+  padding-left:40px !important;
 }
+
 
 .logo:hover {
     height:100px;
@@ -70,4 +64,12 @@
   right: 260px;
   top: 18px;
   justify-content: center;
+}
+
+.logo-nav {
+  height:55px;
+  margin-right:50px;
+  margin-top:-20px;
+  padding-top:8px !important;
+  margin-bottom:-8px;
 }
