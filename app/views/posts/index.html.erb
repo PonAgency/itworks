@@ -1,18 +1,53 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Posts</h1>
-
-<div id="posts">
-  <% @posts.each do |post| %>
-    <%= render post %>
-    <p>
-      <%= link_to "Show this post", post %>
-       <% if post.user == current_user %>
-          <%= link_to 'Edit', edit_post_path(post) %>
-          <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure ?'} %>
-          <% end %>
-    </p>
-  <% end %>
+<div class="container-fluid banner-top-posts"> 
+  <div class="row">
+    <div class="col-6">
+      <%= image_tag "https://res.cloudinary.com/dfefpyzcm/image/upload/v1643897754/soutien_mfs2nm.jpg", alt:"intro", class:"img-fluid"%>  
+    </div>
+    <div class="col-6">
+      <h1 class="title-banner-top-posts">Rejoignez la communauté</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </div>
+  </div>
 </div>
 
-<%= link_to "New post", new_post_path %>
+<div style="height:50px;"></div>
+
+<div class="container"> 
+  <div class="row">
+    <div class="col-6 col-padding-right">
+       <h1 class="title-banner-top-posts2">Vous souhaitez rejoindre le mouvement et soutenir Cora ? N'hésitez plus ! Vous pouvez désormais publier votre témoignage sur notre plateforme.</h1>
+    </div>
+    <div class="col-4 banner-top-posts3">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <div style="height:10px"></div>
+      <p><%= link_to "Je témoigne", new_post_path,class:'btn btn-secondary btn-custom' %></p>
+    </div>
+  </div>
+</div>
+
+<div style="height:30px;"></div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+        <% @posts.each do |post|%>
+          <div class="post-col">
+            <%= render post %>
+              <div class="bottom-post">
+                <p>
+                  <%= link_to "Consulter", post, class:'btn btn-secondary'%>
+                  <% if post.user == current_user %>
+                    <%= link_to 'Modifier', edit_post_path(post),  class:'btn btn-secondary' %>
+                    <%= link_to 'Supprimer', post, method: :delete, data: { confirm: 'Etes vous sur de ne plus soutenir Cora ? Ceci est une grave erreur'},  class:'btn btn-secondary'; %>
+                  <% end %>
+                </p>
+              </div>
+            </div>
+            <% end %>
+          </div>
+    </div>
+  </div>
+</div>

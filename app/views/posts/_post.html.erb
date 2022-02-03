@@ -1,12 +1,21 @@
 <div id="<%= dom_id post %>">
-  <p>
-    <strong>Title:</strong>
-    <%= post.title %>
-  </p>
+  <div class="container">
+    
+    <div class="row row-title">
+      <div class="col">
+        <p>
+          <strong>Sujet :</strong>
+          <%= post.title %>
+        </p>
+      </div>
+    </div>
 
-  <p>
-    <strong>Content:</strong>
-    <%= post.content %>
-  </p>
-
+    <div class="row row-content">
+      <div class="col">
+        <p>
+          <%= post.content %>
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
