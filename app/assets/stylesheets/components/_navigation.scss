@@ -18,7 +18,10 @@
   padding-right:30px;
   text-decoration:none;
   font-family:'Roboto', sans-serif;
-  font-size:15px;
+  outline: none;
+  font-size:13px;
+  letter-spacing: 1px;
+  font-weight:300;
 }
 
 .menu_item:hover{
@@ -26,7 +29,7 @@
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1);
   transition: all 0.6s ease;
-  color:white;
+  color:w#d2d2d2;
 }
 
 .navbar-lewagon .navbar-collapse {
