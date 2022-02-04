@@ -9,22 +9,25 @@
 }
 
 .menu_item {
-  color:#0072bc;
-  padding-right:30px;
-  text-decoration:none;
+  padding-top:5px;
   font-family:'Roboto', sans-serif;
-  outline: none;
+  outline: none !important;
   font-size:13px;
   letter-spacing: 1px;
   font-weight:300;
 }
 
+.menu_text {
+  text-decoration:none;
+  color:#0072bc;
+}
+
 .menu_item:hover{
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1);
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05);
   transition: all 0.6s ease;
-  color:w#d2d2d2;
+  color:#0072bc;
 }
 
 .connexion-navigation {
@@ -32,9 +35,6 @@
   padding-right:40px !important;
 }
 
-.connexion-menu {
-  padding-left:40px !important;
-}
 
 
 .logo:hover {

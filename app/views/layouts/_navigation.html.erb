@@ -1,12 +1,22 @@
 <header>
 	<div class='container-fluid navbar-background fixed-top'>
 		<div class="row">
-			<div class="col-6 connexion-menu">
-				<%= image_tag "https://res.cloudinary.com/dfefpyzcm/image/upload/v1643911463/mini-logo_eqzukr.png", alt:"intro", class:"logo-nav"%>
-				<%= link_to 'LA CANDIDATURE', root_path, class:'menu_item menu-bloc' %>
-				<%= link_to 'LES SOUTIENS', posts_path, class:'menu_item menu-bloc' %>
+			<div class="col-1 connexion-menu">
+				<%= image_tag "https://res.cloudinary.com/dfefpyzcm/image/upload/v1643911463/mini-logo_eqzukr.png", alt:"intro", class:"logo-nav menu_item"%>
 			</div>
-			<div class="col-6 connexion-navigation">
+			<div class="col-2 menu_item">
+				<%= link_to 'LA CANDIDATURE', root_path, class:'menu_text'%>
+			</div>
+			<div class="col-2 menu_item menu_item2">
+				<%= link_to 'LES SOUTIENS', posts_path, class:'menu_text' %>
+			</div>
+
+			<div class="col-3 menu_item">
+				<%= link_to 'JE TEMOIGNE', new_post_path, class:'menu_text' %>
+			</div>
+
+
+			<div class="col-4 connexion-navigation">
 				<% if user_signed_in? %>
 				<%= link_to current_user.email, user_path(current_user), class:'menu_item menu-nav' %>
 				<%= link_to 'Déconnexion', destroy_user_session_path, method: :delete, class:'menu_item' %>

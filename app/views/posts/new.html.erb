@@ -1,9 +1,34 @@
-<h1>New post</h1>
+<div style="height:50px;"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <h1 class="title-new_post">Je témoigne</h1>
+    </div>
+    <div class="col-4 border-left-title">
+      <p class="welcome2">Ensemble,</p>
+      <p class="welcome2">nous pouvons</p>
+      <p class="welcome2">intégrer Epitech</p>
+    </div>
+  </div>
+</div>
+<div class="container-fluid bg-new-post">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <%= image_tag "https://res.cloudinary.com/dfefpyzcm/image/upload/v1643982476/cfe1_jf0zqs.png", alt:"intro", class:"img-fluid test"%>  
+      </div>
+      <div class="col-4">
+        <%= image_tag "https://res.cloudinary.com/dfefpyzcm/image/upload/v1643982482/cfe2_r5fzpp.png", alt:"intro", class:"img-fluid"%>  
+      </div>
+      <div class="col-4">
+        <%= image_tag "https://res.cloudinary.com/dfefpyzcm/image/upload/v1643982487/cfe3_bgruxi.png", alt:"intro", class:"img-fluid"%>  
+      </div>
 
-<%= render "form", post: @post %>
+    </div>
+  </div>
+</div>
 
-<br>
-
-<div>
-  <%= link_to "Back to posts", posts_path %>
+<div class="container">
+    <%= render "form", post: @post %>
+    <%= link_to "Back to posts", posts_path %>
 </div>

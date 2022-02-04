@@ -1,0 +1,41 @@
+.title-form {
+	font-family:'arial black';
+	font-size: 48px;
+	color:#0072bc;
+	padding-top:30px;
+}
+
+.bloc-title-form {
+	border-bottom: solid 1px #d2d2d2;
+	margin-bottom:30px;
+}
+
+#post_content {
+width: 100%;
+border:solid 1px #d2d2d2;
+}
+
+
+div.field:nth-child(3) {
+margin-top: 20px;
+margin-bottom:20px;
+}
+
+#post_title {
+border-top: none;
+border-left: none;
+border-right: none;
+}
+
+.btn-custom2 {
+	width:300px;
+	color:white !important;
+}
+
+div.container:nth-child(6) > a:nth-child(2) {
+display: none;
+}
+
+.margin-right {
+	margin-right:15px;
+}

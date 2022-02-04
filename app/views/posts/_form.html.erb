@@ -11,8 +11,13 @@
     </div>
   <% end %>
 
+  
+<div class="container">
+  <div class="bloc-title-form">
+    <h1 class="title-form">Je soutiens Cora</h1>
+  </div>
   <div class="field">
-    <%= form.label :title %>
+    <%= form.label :titre %>
     <%= form.text_field :title, id: :post_title %>
   </div>
 
@@ -21,7 +26,10 @@
     <%= form.text_area :content, id: :post_content %>
   </div>
 
+  
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Poster mon témoignage", class:'margin-right'%>
+    <%=link_to "Voir tous les témoignages", posts_path, class:'btn btn-custom btn-custom2' %>
   </div>
 <% end %>
+</div>

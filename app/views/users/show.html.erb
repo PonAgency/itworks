@@ -1,13 +1,40 @@
-<h1>Hello <%= @user.email %> </h1>
-<p>Bienvenue sur ton profil !</p>
+<div style="height:50px;"></div>
+<div class="container">
+	<div class="row">
+		<div class ="col-6">	
+			<h1 class="welcome">Bienvenue !</h1>
+		</div>
+		<div class="col-4 border-left-title">
+			<p class="welcome2">Témoignages</p>
+			<p class="welcome2">soutien moral</p>
+			<p class="welcome2">& financement</p>
+		</div>
+	</div>
 
-<ul>
-	<% @posts.each do |post| %>
-	<li>
-		<%= link_to post.title, post_path(post) %>
-	</li>
-	<% end %>
-</ul>
+	<div class="row">
+		<div class="col-12">
+			<%= image_tag "https://res.cloudinary.com/dfefpyzcm/image/upload/v1643965557/la-secte_fz2lwu.png", alt:"intro", class:"img-fluid"%>
+		</div>
+	</div>
+
+	<div class="row border-slider">
+		<div class="col-12">
+			<h1 class="font-border-slider">Bienvenue, tu fais désormais partie de l'Association des amis de Cora ;)</h1>
+		</div>
+	</div>
+	<div style="height:50px;"></div>
+	<div class="row">
+		<div class="col-6">
+			<p class="title-bottom-user">Mon adresse : <%= @user.email %> </p>
+			<p class="title-bottom-user">Mes témoignages </p>
+				<% @posts.each do |post| %>
+					<p><%= link_to post.title, post_path(post) %></p>
+					<p><%= link_to post.content, post_path(post) %></p>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+</div>
 
 
 

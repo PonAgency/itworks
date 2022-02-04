@@ -1,0 +1,43 @@
+.bg-sign_up {
+	background-color:#d2d2d2;
+}
+
+.title-sign_up{
+	font-family:'arial black';
+	font-size: 2Opx;
+	color:#0072bc;
+	text-align:center;
+	padding-bottom:20px;
+}
+
+.col-sign_up {
+	text-align:center;
+	background-color:white;
+	padding-top:50px;
+	padding-bottom:10px;
+	box-shadow: 0 2px 15px grey;
+}
+
+.label-sign_up {
+}
+
+.field-sign_up {
+	margin-bottom:20px;
+}
+
+input {
+    width: 300px;
+}
+
+.actions > input:nth-child(1) {
+	background-color: #0072bc;
+	color:white;
+	border-radius:50px;
+	padding-top:8px;
+	padding-bottom:8px;
+	border:none;
+}
+
+.actions > input:nth-child(1):hover {
+	background-color: #0069d9;
+}
