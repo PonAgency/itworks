@@ -24,14 +24,14 @@
 	</div>
 	<div style="height:50px;"></div>
 	<div class="row">
-		<div class="col-6">
-			<p class="title-bottom-user">Mon adresse : <%= @user.email %> </p>
-			<p class="title-bottom-user">Mes témoignages </p>
-				<% @posts.each do |post| %>
+		<div class="col-12">
+			<div class="title-bottom-user1">Mon adresse : <%= @user.email %> </div>
+			<div class="title-bottom-user2">Mes témoignages </div>
+			<div class="title-bottom-user3">	<% @posts.each do |post| %>
 					<p><%= link_to post.title, post_path(post) %></p>
 					<p><%= link_to post.content, post_path(post) %></p>
 				<% end %>
-			</ul>
+			</div>
 		</div>
 	</div>
 </div>

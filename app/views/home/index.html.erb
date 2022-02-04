@@ -1,13 +1,10 @@
 <div class="container home-title">
 	<div class='row'>
 		<div class="col-12">
+			<div style="height:50px;"></div>
 			<h1 class="home-title-text">Avec Cora, pour Epitech.</h1>
+		<div style="height:10px;"></div>
 		</div>
-	</div>
-</div>
-
-<div class="container">	
-	<div class="row slider_home">
 		<div class="col-12">
 			<%= image_tag "https://res.cloudinary.com/dfefpyzcm/image/upload/v1643818118/kq7n2sj19mzqtgy58bpe.jpg", alt:"intro", class:"img-fluid"%>	
 		</div>
@@ -20,4 +17,31 @@
 				<p><span class="bold">Soutenez la candidature de Cora :</span> Nous avons besoin de vous ! PS : Tout don est bienvenue (chèque, espèces, virement et cryptomonnaies)</p>
 		</div>
 	</div>
+</div>
+
+<div style="height:70px;"></div>
+
+<div class='container'>
+	<div class="row">
+		<div class="col-6 col-paral">
+			<%= image_tag "https://res.cloudinary.com/dfefpyzcm/image/upload/v1643993326/pexels-andrea-piacquadio-3761509_y1g3um.jpg", alt:"intro", class:"img-fluid img-index-bloc"%>
+				<div class="bloc-bleu">
+				<%= link_to 'Parrainage', new_post_path, class:'bloc-bleu-text' %>
+			</div>
+		</div>
+		<div class="col-6 col-paral">
+			<%= image_tag "https://res.cloudinary.com/dfefpyzcm/image/upload/v1643994911/pexels-andrea-piacquadio-3761509_im4k2h.png", alt:"intro", class:"img-fluid img-index-bloc"%>
+			<div class="bloc-bleu">
+				<p class="bloc-bleu-text">Dons</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="paral-index"></div>
+</div>
+
+<div class="container">
+	<p class="home-title-text">"Soutenir ma candidature, c'est rejoindre un mouvement."</p>
 </div>

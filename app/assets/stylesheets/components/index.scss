@@ -39,3 +39,45 @@ body {
     font-family: 'Roboto', sans-serif !important;
     color:#6c757d!important;
 }
+
+.col-paral {
+	padding-left:40px !important;
+	padding-right:40px !important;
+}
+
+ .paral-index {
+  background-image: url("https://res.cloudinary.com/dfefpyzcm/image/upload/v1643992629/pexels-diva-plavalaguna-6150584_i3ls2a.jpg");
+  min-height: 300px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top:130px !important;
+  margin-bottom:70px !important;
+
+ }
+
+.img-index-bloc {
+	opacity:0.5;}
+
+
+.bloc-bleu-text {
+	font-family:'arial black';
+	font-size: 48px;
+	color:white !important;
+	text-decoration:none;
+
+}
+
+.bloc-bleu {
+	padding-top:48px;
+	background-color:#0072bc;
+	height:200px;
+	text-align:center;
+}
+
+.bloc-bleu:hover {
+	background-color:#f26522;
+}
+
+
