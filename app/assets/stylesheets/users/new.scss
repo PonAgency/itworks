@@ -7,13 +7,30 @@ right: 0;
 top: 0;
 bottom: 0;
 z-index: -1;
+margin-bottom:-110px;
 }
 
-.money {
-	background-color:white;
-	height:500px;
+.content {
+  position: fixed;
+  bottom: 30%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  text-align:center;
+  z-index: 0;
+  margin-bottom:10%;
 }
 
-.derniereminute {
-	margin-top:-500px !important;
+.coinbase {
+	height:50px;
+}
+
+.js-copy {
+	padding-top:8px;
+	padding-bottom:12px;
+	color:white;
+	font-size:16px;
+	width:200px;
+	border:none;
 }
